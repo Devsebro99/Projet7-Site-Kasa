@@ -1,9 +1,9 @@
-function Home() {
+function Logement() {
   return (
-    <HomeContainer>
-      <h1> Page d'accueil </h1>
-    </HomeContainer>
+    <div>
+      <h1> Logement disponible</h1>
+    </div>
   )
 }
 
-export default Home
+export default Logement
