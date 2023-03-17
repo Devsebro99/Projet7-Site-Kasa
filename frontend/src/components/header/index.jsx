@@ -2,41 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-const HeaderStyle = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 68px;
-  max-width: 1240px;
-  background-color: #blue;
-  margin: 40px 100px;
-`
-const LogoStyle = styled.img`
-  border: 2px solid black;
-  height: 63px;
-  width: 210.32px;
-`
-const Nav = styled.nav`
-  align-content: center;
-  justify-content: center;
-  height: 34px;
-  width: 309;
-`
-
-const MenuStyle = styled.ul`
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: right;
-  height: 34px;
-  width: 309;
-  margin: 0px;
-`
-
-const Liste = styled.li`
-  list-style-type: none;
-`
+import myImage from '../../assets/logo_header.svg'
+import '../../styles/css/header.css'
 
 const StyledLink = styled(Link)`
   text-decoration: none;
@@ -53,19 +20,25 @@ const StyledLink = styled(Link)`
 
 function Header() {
   return (
-    <HeaderStyle>
-      <LogoStyle src="../../assets/logo.png" alt="Logo Kasa" />
-      <Nav>
-        <MenuStyle>
-          <Liste>
+    <div className="kasaHead">
+      <img src={myImage} alt="Logo Kasa" />
+      <nav className="kasaHead-nav">
+        <ul className="kasaHead-menu">
+          <li className="kasaHead-liste">
             <StyledLink to="/">Accueil</StyledLink>
-          </Liste>
-          <Liste>
+          </li>
+          <li className="kasaHead-liste">
             <StyledLink to="/apropos">A propos</StyledLink>
-          </Liste>
-        </MenuStyle>
-      </Nav>
-    </HeaderStyle>
+          </li>
+          <li className="kasaHead-liste">
+            <StyledLink to="/error">Error404</StyledLink>
+          </li>
+          <li className="kasaHead-liste">
+            <StyledLink to="/logement">Logement</StyledLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
   )
 }
 

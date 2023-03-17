@@ -1,0 +1,68 @@
+
+.pageAccueil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/*Section 1: Image en background*/
+.pageAccueil_imgBackground{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    height: 223px;
+    width: 100%;
+    background-image: url('../../assets/img01.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pageAccueil_txtBackground {
+    width: 705px;
+    height: 68px;
+    color: #ffffff;
+    font-size: 48px;
+    margin: 78px 262px;
+}
+
+/*Section 2 : les differentes Cards*/
+.pageAccueil_gallery{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 43px 0px;
+    border-radius: 25px;
+    background-color: #f6f6f6;
+}
+
+.pageAccueil_part{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height:50%;
+    width: 100%;
+}
+
+.pageAccueil_card{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width:100%;
+    height:340px;
+    margin:56px 25px 25px 25px;
+    border-radius: 10px;
+    background: linear-gradient(to top, #000000 -50%, #FF6060 50%);
+
+}
+
+.pageAccueil_titleLocation{
+    display: flex;
+    justify-content: center;
+    width:90%;
+
+}
