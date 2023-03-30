@@ -1,0 +1,54 @@
+@import url('../../styles/css/colors/variables.css');
+
+.kasaHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+  width: 100%;
+}
+
+.kasaHead_img {
+  width: 210px;
+  height: 68px;
+}
+.kasaHead-nav {
+  align-content: center;
+  justify-content: center;
+  height: 34px;
+  width: 309;
+}
+
+.kasaHead-menu {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: right;
+  height: 34px;
+  width: 309;
+  margin: 0px;
+}
+
+.kasaHead-liste {
+  list-style-type: none;
+}
+
+.kasaHead_style {
+  text-decoration: none;
+  color: var(--tertiary-color);
+  font-size: 24px;
+  font-weight: 500;
+  padding: 20px;
+  height: 34px;
+  width: 136px;
+}
+
+.kasaHead_style:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Dimension pour ecran telephone portable*/
+@media screen and (max-width: 576px) {
+}

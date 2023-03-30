@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --tertiary-color: #ff6060;
+
+  --background-color: #f6f6f6;
+  --backgroundStars-color: #e3e3e3;
+  --backgroundProfile-color: #c4c4c4;
+}
+
+/* @import url('../../styles/css/colors/variables.css'); */
+/* var(--primary-color) */
+/* var(--secondary-color) */
+/* var(--tertiary-color) */
+/* var(--background-color) */
+/* var(--backgroundStars-color) */
+/* var(--backgroundProfile-color) */

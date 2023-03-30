@@ -1,0 +1,87 @@
+@import url('../../styles/css/colors/variables.css');
+
+.apropos_imgBackground {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  height: 223px;
+  width: 100%;
+  margin: 44px 0px;
+  background-image: url('../../assets/img02.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.apropos_notices {
+  margin: 0px 110px 44px 110px;
+}
+
+.apropos_card {
+  margin-bottom: 32px;
+}
+
+.apropos_titleCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 47px;
+  width: 100%;
+  border-radius: 5px;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+}
+
+.apropos_titleCard_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  size: 24px;
+  padding: 5px 10px;
+}
+
+.apropos_titleCard_vector {
+  background-image: url('../../assets/Vector.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: var(--tertiary-color);
+  border: 0 none;
+}
+
+.rotate {
+  animation: Vector-logo-spin none 10s linear;
+}
+
+@keyframes Vector-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.apropos_titleCard_ajust {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: var(--background-color);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.apropos_titleCard_paraf {
+  width: 95%;
+  height: auto;
+  size: 24px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}

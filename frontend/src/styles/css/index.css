@@ -1,8 +1,6 @@
-
-
 .pageStyle {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 100px;
-    font-family: 'Montserrat', Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 100px;
+  font-family: 'Montserrat', sans-serif;
 }
