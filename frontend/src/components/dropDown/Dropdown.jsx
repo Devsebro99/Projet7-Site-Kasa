@@ -12,19 +12,31 @@ function DropDown({ title, description }) {
       setParagraphHeight(0)
     }
   }, [isExpanded])
+
   const toggleExpanded = () => {
     setIsExpanded(!isExpanded)
   }
+
+  const [rotation, setRotation] = useState(0)
+  const vector = () => {
+    setRotation(rotation + 180)
+  }
+
   return (
     <section className="apropos_card">
       {/* Partie du titre */}
       <aside className="apropos_titleCard">
         <h1 className="apropos_titleCard_title">{title}</h1>
         <button
-          className="apropos_titleCard_vector"
           onClick={() => {
             toggleExpanded()
+            vector()
           }}
+          style={{
+            transform: `rotate(${rotation}deg)`,
+            transition: 'transform 0s ease-in-out',
+          }}
+          className="apropos_titleCard_vector"
         ></button>
       </aside>
 

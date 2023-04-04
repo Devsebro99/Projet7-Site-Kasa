@@ -14,7 +14,7 @@ function Accueil() {
         {datas.map((loge) => (
           <Link
             key={`datas-${loge.id}`}
-            to="/logement"
+            to={`/logement/${loge.id}`}
             style={{
               textDecoration: 'none',
             }}
