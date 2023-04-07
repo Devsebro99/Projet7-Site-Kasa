@@ -1,15 +1,15 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-
 import datas from '../../datas/Logement.json'
 import Error from '../../layouts/error/Error'
 import './logement.css'
 import DropDown from '../../components/dropDown/Dropdown'
+import Stars from '../../components/stars/Stars'
+import TagsNames from '../../components/tags/Tags'
 
 function Logement() {
   const { id } = useParams()
   const loge = datas.find((p) => p.id === id)
-  console.log(loge)
 
   if (!loge) {
     return <Error />
@@ -30,32 +30,42 @@ function Logement() {
       <article className="loge_titleHost">
         {/* premiere partie */}
         <section className="loge_titleHost_sectionOne">
-          <div>
+          <aside>
             <h1 className="loge_titleHost_sectionOne_title">{loge.title}</h1>
             <h2 className="loge_titleHost_sectionOne_location">
               {loge.location}
             </h2>
-          </div>
-          <h3 className="loge_titleHost_sectionOne_tags">{loge.tags}</h3>
+          </aside>
+          <TagsNames
+            scaleValue={loge.tags}
+            classNameTags="tags"
+            classNameList="tags_list"
+          ></TagsNames>
         </section>
 
         {/* deuxieme partie */}
         <section className="loge_titleHost_sectionTwo">
-          <div className="loge_titleHost_sectionTwo_profileName">
+          <aside className="loge_titleHost_sectionTwo_profileName">
             <h2 className="loge_titleHost_sectionTwo_title">
               {loge.host.name}
             </h2>
-            <img src={loge.host.picture} alt="Profile" />
-          </div>
-
-          <div className="loge_stars">{loge.rating}</div>
+            <img
+              className="loge_titleHost_sectionTwo_img"
+              src={loge.host.picture}
+              alt="Profile"
+            />
+          </aside>
+          <Stars scaleValue={loge.rating}></Stars>
         </section>
       </article>
 
       {/*description and equipements  */}
       <article className="loge_details">
         <DropDown title="Description" description={loge.description} />
-        <DropDown title="Equipements" description={loge.equipments} />
+        <DropDown
+          title="Equipements"
+          description={<TagsNames scaleValue={loge.equipments}></TagsNames>}
+        />
       </article>
     </main>
   )

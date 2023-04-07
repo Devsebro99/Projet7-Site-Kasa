@@ -51,4 +51,25 @@
 
 /* Dimension pour ecran telephone portable*/
 @media screen and (max-width: 576px) {
+  .kasaHead {
+    height: 47px;
+    width: 100%;
+    min-width: 335px;
+  }
+
+  .kasaHead_img {
+    width: 145px;
+    height: 47px;
+  }
+
+  .kasaHead-menu {
+    padding: 0px 0px 0px 10px;
+  }
+  .kasaHead_style {
+    font-size: 12px;
+    padding: 5px;
+    width: 71px;
+    height: 12px;
+    min-width: 71px;
+  }
 }

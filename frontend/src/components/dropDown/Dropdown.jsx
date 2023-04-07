@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import '../../pages/apropos/apropos.css'
+import './dropDown.css'
 
 function DropDown({ title, description }) {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -23,10 +23,10 @@ function DropDown({ title, description }) {
   }
 
   return (
-    <section className="apropos_card">
+    <section className="dropdown_card">
       {/* Partie du titre */}
-      <aside className="apropos_titleCard">
-        <h1 className="apropos_titleCard_title">{title}</h1>
+      <aside className="dropdown_titleCard">
+        <h2 className="dropdown_titleCard_title">{title}</h2>
         <button
           onClick={() => {
             toggleExpanded()
@@ -36,17 +36,17 @@ function DropDown({ title, description }) {
             transform: `rotate(${rotation}deg)`,
             transition: 'transform 0s ease-in-out',
           }}
-          className="apropos_titleCard_vector"
+          className="dropdown_titleCard_vector"
         ></button>
       </aside>
 
       {/* Partie du texte */}
       <aside
-        className="apropos_titleCard_ajust"
+        className="dropdown_titleCard_ajust"
         style={{ height: paragraphHeight }}
       >
         {isExpanded ? (
-          <p className="apropos_titleCard_paraf">{description}</p>
+          <p className="dropdown_titleCard_paraf">{description}</p>
         ) : null}
       </aside>
     </section>

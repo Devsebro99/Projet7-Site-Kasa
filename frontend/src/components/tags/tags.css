@@ -1,0 +1,17 @@
+@import url(../../styles//css/colors/variables.css);
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tags_list {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  margin: 0px 10px 0px 0px;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
