@@ -32,7 +32,7 @@
   height: 20px;
   margin-right: 10px;
   background-color: var(--tertiary-color);
-  border: 0 none;
+  border: none;
 }
 
 .dropdown_titleCard_ajust {
@@ -52,10 +52,26 @@
   align-items: center;
   justify-content: flex-start;
   width: 95%;
-  height: 250px;
+  height: auto;
   font-size: 18px;
   font-weight: 400;
   color: var(--tertiary-color);
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  padding: 20px 0px;
+}
+
+/* Dimension pour ecran smartphone*/
+@media screen and (max-width: 767px) {
+  .dropdown_titleCard {
+    height: 30px;
+  }
+
+  .dropdown_titleCard_title {
+    font-size: 13px;
+  }
+
+  .dropdown_titleCard_paraf {
+    font-size: 12px;
+  }
 }

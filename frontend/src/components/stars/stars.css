@@ -1,0 +1,12 @@
+.starsImg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Dimension pour ecran smartphone*/
+@media screen and (max-width: 767px) {
+  .starsImg {
+    width: 13px;
+    height: 13px;
+  }
+}

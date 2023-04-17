@@ -1,0 +1,61 @@
+.previousClick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  background-image: url('../../assets/VectorLeft.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 46px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  top: auto;
+  left: 0%;
+}
+
+/* image du logement */
+.loge_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  height: 500px;
+  width: 100%;
+  max-width: 1440px;
+  max-height: 960px;
+  margin: 30px 0px;
+  position: relative;
+}
+
+.nextClick {
+  background-color: transparent;
+  background-image: url('../../assets/VectorRight.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 46px;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  top: auto;
+  right: 0%;
+}
+
+/* Dimension pour ecran smartphone*/
+@media screen and (max-width: 767px) {
+  .previousClick {
+    height: 40px;
+    width: 25px;
+  }
+
+  .loge_image {
+    height: 300px;
+  }
+
+  .nextClick {
+    height: 40px;
+    width: 25px;
+  }
+}

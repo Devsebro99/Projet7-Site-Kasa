@@ -14,33 +14,24 @@
   height: 68px;
 }
 .kasaHead-nav {
-  align-content: center;
-  justify-content: center;
-  height: 34px;
-  width: 309;
-}
-
-.kasaHead-menu {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: right;
-  height: 34px;
-  width: 309;
-  margin: 0px;
-}
-
-.kasaHead-liste {
-  list-style-type: none;
+  justify-content: flex-end;
+  height: 68px;
+  width: 350px;
 }
 
 .kasaHead_style {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: var(--tertiary-color);
   font-size: 24px;
   font-weight: 500;
-  padding: 20px;
-  height: 34px;
+  height: 68px;
   width: 136px;
 }
 
@@ -49,25 +40,27 @@
   text-decoration: underline;
 }
 
-/* Dimension pour ecran telephone portable*/
-@media screen and (max-width: 576px) {
+/* Dimension pour ecran smartphone*/
+@media screen and (max-width: 767px) {
   .kasaHead {
     height: 47px;
     width: 100%;
     min-width: 335px;
   }
-
+  .kasaHead-nav {
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    height: 47px;
+    min-width: 150px;
+  }
   .kasaHead_img {
     width: 145px;
     height: 47px;
   }
 
-  .kasaHead-menu {
-    padding: 0px 0px 0px 10px;
-  }
   .kasaHead_style {
     font-size: 12px;
-    padding: 5px;
     width: 71px;
     height: 12px;
     min-width: 71px;

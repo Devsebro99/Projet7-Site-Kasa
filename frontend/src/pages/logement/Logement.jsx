@@ -3,9 +3,10 @@ import { useParams } from 'react-router-dom'
 import datas from '../../datas/Logement.json'
 import Error from '../../layouts/error/Error'
 import './logement.css'
-import DropDown from '../../components/dropDown/Dropdown'
+import DropDown from '../../components/collapse/Collapse'
 import Stars from '../../components/stars/Stars'
 import TagsNames from '../../components/tags/Tags'
+import ImageSlider from '../../components/slideShow/SlideShow'
 
 function Logement() {
   const { id } = useParams()
@@ -17,14 +18,8 @@ function Logement() {
   return (
     <main className="loge">
       {/* Image font */}
-      <article
-        className="loge_image"
-        style={{
-          backgroundImage: `url(${loge.cover})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-        }}
-      ></article>
+
+      <ImageSlider loge={loge} />
 
       {/* title and profile */}
       <article className="loge_titleHost">

@@ -6,6 +6,8 @@
   --background-color: #f6f6f6;
   --backgroundStars-color: #e3e3e3;
   --backgroundProfile-color: #c4c4c4;
+
+  --backgroundBrightness: brightness(70%);
 }
 
 /* @import url('../../styles/css/colors/variables.css'); */
@@ -15,3 +17,4 @@
 /* var(--background-color) */
 /* var(--backgroundStars-color) */
 /* var(--backgroundProfile-color) */
+/* var(--backgroundBrightness) */

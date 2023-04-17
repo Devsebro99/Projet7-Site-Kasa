@@ -26,6 +26,10 @@
   font-weight: 500;
 }
 
-/* Dimension pour ecran telephone portable*/
-@media screen and (max-width: 576px) {
+/* Dimension pour ecran smartphone*/
+@media screen and (max-width: 767px) {
+  .footerStyle_copyright {
+    font-size: 12px;
+    margin: 20px 0px 60px 0px;
+  }
 }

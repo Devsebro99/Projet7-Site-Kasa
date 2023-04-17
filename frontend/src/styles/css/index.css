@@ -4,3 +4,11 @@
   padding: 40px 100px;
   font-family: 'Montserrat', sans-serif;
 }
+
+/* Dimension pour ecran smartphone*/
+@media screen and (max-width: 767px) {
+  .pageStyle {
+    padding: 20px 20px;
+    min-width: 377px;
+  }
+}

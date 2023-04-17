@@ -9,15 +9,10 @@
   width: 100%;
 }
 
-/* image du logement */
-.loge_image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 25px;
-  height: 900px;
+.loge_image img {
+  height: 100%;
   width: 100%;
-  margin: 30px 0px;
+  border-radius: 25px;
 }
 
 /* format central de la page */
@@ -27,7 +22,8 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 180px;
+  height: auto;
+  gap: 10px;
 }
 
 /* premiere partie */
@@ -35,8 +31,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 50%;
-  height: 100%;
+  width: 70%;
+  height: auto;
 }
 
 .loge_titleHost_sectionOne_title {
@@ -59,25 +55,33 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  width: 50%;
+  gap: 20px;
+  width: 30%;
   height: 100%;
 }
 
 .loge_titleHost_sectionTwo_profileName {
   display: flex;
   flex-direction: row;
+  gap: 5px;
 }
 
 .loge_titleHost_sectionTwo_title {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   font-size: 18px;
   font-weight: 500;
-  margin: 20px;
+  margin: 0px;
+  color: var(--tertiary-color);
 }
 
 .loge_titleHost_sectionTwo_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
   border-radius: 70px;
   background-color: var(--backgroundProfile-color);
 }
@@ -92,6 +96,46 @@
   margin: 20px 0px;
   width: 100%;
 }
-.dropdown_card {
-  width: 50%;
+
+/* Dimension pour ecran smartphone*/
+@media screen and (max-width: 767px) {
+  .loge_image {
+    max-width: 618px;
+  }
+
+  .loge_titleHost {
+    flex-direction: column;
+  }
+
+  .loge_titleHost_sectionOne {
+    width: 100%;
+  }
+
+  .loge_titleHost_sectionOne_title {
+    font-size: 18px;
+  }
+
+  .loge_titleHost_sectionOne_location {
+    font-size: 14px;
+  }
+
+  .loge_titleHost_sectionTwo {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  .loge_titleHost_sectionTwo_title {
+    font-size: 12px;
+  }
+  .loge_titleHost_sectionTwo_img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .loge_details {
+    flex-direction: column;
+  }
 }

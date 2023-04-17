@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './dropDown.css'
+import './collapse.css'
 
 function DropDown({ title, description }) {
   const [isExpanded, setIsExpanded] = useState(false)
@@ -46,7 +46,7 @@ function DropDown({ title, description }) {
         style={{ height: paragraphHeight }}
       >
         {isExpanded ? (
-          <p className="dropdown_titleCard_paraf">{description}</p>
+          <span className="dropdown_titleCard_paraf">{description}</span>
         ) : null}
       </aside>
     </section>

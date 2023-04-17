@@ -1,10 +1,11 @@
 import './apropos.css'
-import DropDown from '../../components/dropDown/Dropdown'
+import DropDown from '../../components/collapse/Collapse'
+import imgMontagne from '../../assets/img02.svg'
 
 function Apropos() {
   return (
     <main className="apropos">
-      <article className="apropos_imgBackground"></article>
+      <img className="apropos_imgBackground" src={imgMontagne} alt="Montagne" />
       <article className="apropos_notices">
         <DropDown
           title="Fiabilité"

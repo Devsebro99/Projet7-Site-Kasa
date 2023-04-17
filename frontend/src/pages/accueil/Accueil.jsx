@@ -2,11 +2,16 @@ import { Link } from 'react-router-dom'
 import React from 'react'
 import datas from '../../datas/Logement.json'
 import './accueil.css'
+import imgOceanFalaise from '../../assets/img01.svg'
 
 function Accueil() {
   return (
     <main className="pageAccueil">
-      <article className="pageAccueil_imgBackground"></article>
+      <img
+        className="pageAccueil_imgBackground"
+        src={imgOceanFalaise}
+        alt="Falaise Ocean"
+      />
       <h1 className="pageAccueil_txtBackground">
         Chez vous, partout et ailleurs
       </h1>

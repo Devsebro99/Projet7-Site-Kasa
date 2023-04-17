@@ -10,19 +10,40 @@
 }
 
 .error_h1 {
-  font-style: bold;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 230px;
+  font-weight: 700;
   margin: 180px 0px 0px 0px;
 }
 
 .error_h2 {
+  width: 85%;
+  text-align: center;
   font-size: 26px;
+  font-weight: 500;
   margin: 20px 0px 100px 0px;
 }
 
 .error_linkAccueil {
-  font-size: 17px;
+  color: var(--tertiary-color);
+  font-size: 18px;
+  font-weight: 500;
   margin: 20px 0px 100px 0px;
+}
+
+/* Dimension pour ecran smartphone*/
+@media screen and (max-width: 767px) {
+  .error_h1 {
+    font-size: 96px;
+  }
+
+  .error_h2 {
+    font-size: 18px;
+  }
+
+  .error_linkAccueil {
+    font-size: 14px;
+  }
 }

@@ -8,10 +8,7 @@
   height: 223px;
   width: 100%;
   margin: 44px 0px;
-  background-image: url('../../assets/img02.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: brightness(80%);
+  filter: var(--backgroundBrightness);
 }
 
 .apropos_notices {
@@ -20,4 +17,11 @@
   align-items: center;
   justify-content: center;
   padding: 0px 80px;
+}
+
+/* Dimension pour ecran smartphone*/
+@media screen and (max-width: 767px) {
+  .apropos_notices {
+    padding: 0px;
+  }
 }

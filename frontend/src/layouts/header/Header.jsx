@@ -9,18 +9,12 @@ function Header() {
     <div className="kasaHead">
       <img className="kasaHead_img" src={myImage} alt="Logo Kasa" />
       <nav className="kasaHead-nav">
-        <ul className="kasaHead-menu">
-          <li className="kasaHead-liste">
-            <Link to="/" className="kasaHead_style">
-              Accueil
-            </Link>
-          </li>
-          <li className="kasaHead-liste">
-            <Link to="/apropos" className="kasaHead_style">
-              A propos
-            </Link>
-          </li>
-        </ul>
+        <Link to="/" className="kasaHead_style">
+          Accueil
+        </Link>
+        <Link to="/apropos" className="kasaHead_style">
+          A propos
+        </Link>
       </nav>
     </div>
   )
