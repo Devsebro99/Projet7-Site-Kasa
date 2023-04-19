@@ -15,6 +15,10 @@
   left: 0%;
 }
 
+.previousClick:hover {
+  cursor: pointer;
+}
+
 /* image du logement */
 .loge_image {
   display: flex;
@@ -23,10 +27,27 @@
   border-radius: 25px;
   height: 500px;
   width: 100%;
-  max-width: 1440px;
-  max-height: 960px;
   margin: 30px 0px;
   position: relative;
+}
+
+.loge_image img {
+  object-fit: cover;
+}
+
+.numberPage {
+  font-size: 18px;
+  font-weight: 500;
+  width: 40px;
+  height: 32px;
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  position: absolute;
+  bottom: 0%;
+  right: auto;
+}
+.numberPage:hover {
+  cursor: default;
 }
 
 .nextClick {
@@ -43,6 +64,10 @@
   right: 0%;
 }
 
+.nextClick {
+  cursor: pointer;
+}
+
 /* Dimension pour ecran smartphone*/
 @media screen and (max-width: 767px) {
   .previousClick {
@@ -52,6 +77,10 @@
 
   .loge_image {
     height: 300px;
+  }
+
+  .numberPage {
+    opacity: 0%;
   }
 
   .nextClick {

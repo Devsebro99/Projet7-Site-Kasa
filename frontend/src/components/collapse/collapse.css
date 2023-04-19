@@ -33,6 +33,7 @@
   margin-right: 10px;
   background-color: var(--tertiary-color);
   border: none;
+  cursor: pointer;
 }
 
 .dropdown_titleCard_ajust {
